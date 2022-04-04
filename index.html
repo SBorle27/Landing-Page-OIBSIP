@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Website Landing Page </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not Ice- cream<br> Its<span> BRAVO</span></h2>
+                    <p>Ice-cream is one of the most popular desserts. It is a frozen dessert made out of milk and cream generally and come in many flavours. Though children love ice creams the most, these days ice creams are made for all age-groups. There are ice creams even for diabetics and heart patients.<br> KEEP CALM AND EAT ICE-CREAM</p>
+                    <a href="#"> Learn More </a>
+                    </div>
+                    <div class="imgBox">
+                        <img src="img1.png" class="icecream">
+                 </div>
+                 </div>
+                 <ul class="thumb">
+                     <li><img src="thumb1.png"onclick="imgSlider('img1.png')"></li>
+                     <li><img src="thumb.png"onclick="imgSlider('img2.png')"></li>
+                     <li><img src="thumb3.PNG"onclick="imgSlider('img3.png')"></li>
+                 </ul>
+                 <ul class="sci">
+                     <li><a href="#"><img src="fb.png"></a></li>
+                     <li><a href="#"><img src="insta.png"></a></li>
+                     <li><a href="#"><img src="twitter.png"></a></li>
+                 </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything)
+            {
+                document.querySelector('.icecream').src=anything;
+            }
+            function changeCircleColor(color)
+            {
+                const circle= document.querySelector('.circle');
+                circle.style.background=color;            }
+        </script>
+
+    </body>
+</html>
